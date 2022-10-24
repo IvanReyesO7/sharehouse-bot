@@ -24,18 +24,8 @@ jobs:
       run: |
         ruby app.rb    
     - name: Update resources
-      runs-on: ubuntu-latest
-      steps:
-          - uses: actions/checkout@v1
-
-          - uses: actions/setup-node@v1
-
-          - name: Fetch resources
-            run: ./scripts/fetch-resources.sh
-
-          - name: Update resources
-            uses: test-room-7/action-update-file@v1
-            with:
-                file-path: teams.yml
-                commit-msg: Update resources
-                github-token: ${{ secrets.SSH }}
+      uses: test-room-7/action-update-file@v1
+      with:
+          file-path: teams.yml
+          commit-msg: Update resources
+          github-token: ${{ secrets.SSH }}
