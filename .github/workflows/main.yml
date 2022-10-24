@@ -14,13 +14,13 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Set up Ruby 2.6
-      uses: actions/setup-ruby@v1
+      uses: ruby/setup-ruby@v1
       with:
         ruby-version: 2.6.x
     - name: run script
       env:
         CHANNEL_ACCESS_TOKEN: ${{ secrets.CHANNEL_ACCESS_TOKEN }}
-        USER_ID: ${{ secrets.GROUP_ID }}
+        GROUP_ID: ${{ secrets.GROUP_ID }}
       run: |
         ruby app.rb    
     - name: switching from HTTPS to SSH
