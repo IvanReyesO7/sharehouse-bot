@@ -30,5 +30,3 @@ jobs:
           file-path: teams.yml
           commit-msg: Update resources
           github-token: ${{ secrets.SSH }}
-
-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
