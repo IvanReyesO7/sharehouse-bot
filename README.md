@@ -1,5 +1,5 @@
 # sharehouse-bot 🤖
-Small bot that sends a weekly reminders of whose turn it is to do the cleaning.
+Small bot that sends a weekly reminders of whose turn it is to do the cleaning, and what day of the week the Trash needs to be taken out.
 
 ### How to update the database?
 The database of this project relies on two files `members.yml` and `teams.yml`.
