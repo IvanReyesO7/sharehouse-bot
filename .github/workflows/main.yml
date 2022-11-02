@@ -1,4 +1,4 @@
-name: test_chatbot
+name: Weekly reminder Turn 
 
 on:
   schedule:
