@@ -1,8 +1,8 @@
 name: Weekly reminder Turn 
 
-on:
-  schedule:
-     - cron: "0 23 * * 0"
+# on:
+#  schedule:
+#     - cron: "0 23 * * 0"
 
 jobs:
   build:
